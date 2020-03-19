@@ -1,6 +1,10 @@
 <!DOCTYPE html>
 <html>
   <head>
+  <% flash.each do |name, msg| -%>
+    <%= content_tag :div, msg, class: name %>
+  <% end -%>
+  
     <title>Anotherworld</title>
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
