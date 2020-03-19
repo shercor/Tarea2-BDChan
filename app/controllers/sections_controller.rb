@@ -16,7 +16,7 @@ class SectionsController < ApplicationController
     end
     def show
         @sections = Section.find(params[:id])
-        redirect_to home_path, notice: "Se ha creado la seccion exitosamente"
+        #redirect_to home_path, notice: "Se ha creado la seccion exitosamente"
     end
       
       private

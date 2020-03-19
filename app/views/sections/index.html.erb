@@ -12,7 +12,7 @@
   <tbody>
     <% @sections.each do |sec| %>
       <tr>
-        <td><%= sec.name %></td>
+        <td><%= link_to sec.name, sec %></td>
         <td><%= sec.created_at %></td>
       </tr>
     <% end %>
